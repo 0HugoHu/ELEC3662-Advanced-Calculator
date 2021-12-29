@@ -3,29 +3,6 @@ ELEC3662 / XJEL3662 Embedded Systems Mini Project.
 
 Based on Tiva C Series TM4C123G LaunchPad, HITACHI HD44780U 16 * 2 LCD Screen, and a 4 \* 4 matrix Keypad.
 
-# Statistics
-
-|Files |Lines of Code                     |Explanations|
-|----------------|-------------------------------|-----------------------------|
-|main.c|370|Entrance. Finate-state Machine|
-|TExaS.h|46|Debugger|
-|INDICATOR.h|30|LEDs status indicator|
-|INDICATOR.c|98| |
-|PLL.h|20|Configure system time function|
-|PLL.c|66| |
-|PORT.h|94|All ports declarations|
-|BUFFER.h|30|Store and display inputs|
-|BUFFER.c|78| |
-|KEY.h|40|Read keypad inputs|
-|KEY.c|235| |
-|LCD.h|36|Display characters and strings|
-|LCD.c|173| |
-|CALCULATOR.h|95|Core mathematical algorithms|
-|CALCULATOR.c|589| |
-|PASSWORD.h|23|Save and read EEPROM|
-|PASSWORD.c|48| |
-|**Total**|**2071**| |
-
 # Checklist
 
 💡means extra task.
@@ -138,6 +115,29 @@ Example:
 # Live Demo
 
 A Video and some photos are waiting to upload...
+
+# Statistics
+
+|Files |Lines of Code                     |Explanations|
+|----------------|-------------------------------|-----------------------------|
+|main.c|370|Entrance. Finate-state Machine|
+|TExaS.h|46|Debugger|
+|INDICATOR.h|30|LEDs status indicator|
+|INDICATOR.c|98| |
+|PLL.h|20|Configure system time function|
+|PLL.c|66| |
+|PORT.h|94|All ports declarations|
+|BUFFER.h|30|Store and display inputs|
+|BUFFER.c|78| |
+|KEY.h|40|Read keypad inputs|
+|KEY.c|235| |
+|LCD.h|36|Display characters and strings|
+|LCD.c|173| |
+|CALCULATOR.h|95|Core mathematical algorithms|
+|CALCULATOR.c|589| |
+|PASSWORD.h|23|Save and read EEPROM|
+|PASSWORD.c|48| |
+|**Total**|**2071**| |
 
 # Contribution
 The project's LCD driver function and EEPROM initialization, reading and saving methods are referenced from https://github.com/el15cr/ELEC3662-Calculator/blob/master.
