@@ -34,7 +34,8 @@ Based on Tiva C Series TM4C123G LaunchPad, HITACHI HD44780U 16 * 2 LCD Screen, a
 |`Correct Result`|✅ Yes|Show integer and floating values in correct form, e.g. "2.5\*2=5", "5/2=2.5". Removed unnecessary zeros, e.g. normally "2.6/2=1.3000", here I show the result as "2.6/2=1.3" |
 |`40 Characters Expression`|✅ Yes 💡|Up to 40 characters length expression can be calculated|
 |`Adjust Screen Contrast`|⭕ No 💡|Couln't achieve this function due to the lack of a sliding resistor. PWM modulation is an alternative way, but I leave it here|
-|`Dangerous Calculation Avoided`|✅ Yes 💡|When calculate "1/0" or "log2(-41)", result shows "0" instead of the program crashing.|
+|`Dangerous Calculation Avoided`|✅ Yes 💡|When calculate "1/0" or "log2(-41)", result shows "0" instead of the program crashing|、
+|`Key De-jittering`|✅ Yes 💡|Avoid unintentional inputs due to false touches and environmental noise by detecting the rising edge and setting a short time to repeat the detection twice|
 
 # Circuit Scheme
 
