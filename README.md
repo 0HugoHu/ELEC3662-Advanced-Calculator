@@ -3,6 +3,29 @@ ELEC3662 / XJEL3662 Embedded Systems Mini Project.
 
 Based on Tiva C Series TM4C123G LaunchPad, HITACHI HD44780U 16 * 2 LCD Screen, and a 4 \* 4 matrix Keypad.
 
+# Statistics
+
+|Files |Lines of Code                     |Explanations|
+|----------------|-------------------------------|-----------------------------|
+|main.c|370|Entrance. Finate-state Machine|
+|TExaS.h|46|Debugger|
+|INDICATOR.h|30|LEDs status indicator|
+|INDICATOR.c|98| |
+|PLL.h|20|Configure system time function|
+|PLL.c|66| |
+|PORT.h|94|All ports declarations|
+|BUFFER.h|30|Store and display inputs|
+|BUFFER.c|78| |
+|KEY.h|40|Read keypad inputs|
+|KEY.c|235| |
+|LCD.h|36|Display characters and strings|
+|LCD.c|173| |
+|CALCULATOR.h|95|Core mathematical algorithms|
+|CALCULATOR.c|589| |
+|PASSWORD.h|23|Save and read EEPROM|
+|PASSWORD.c|48| |
+|**Total**|**2071**| |
+
 # Checklist
 
 💡means extra task.
@@ -36,6 +59,7 @@ Based on Tiva C Series TM4C123G LaunchPad, HITACHI HD44780U 16 * 2 LCD Screen, a
 |`Adjust Screen Contrast`|⭕ No 💡|Couln't achieve this function due to the lack of a sliding resistor. PWM modulation is an alternative way, but I leave it here|
 
 # Circuit Scheme
+
 ![`MFS9DY8L(H(QJO6 )TW75I](https://user-images.githubusercontent.com/46556200/147673201-6df4e6f1-79c0-4577-bced-fd01f6145498.png)
 
 \*4-bit mode is applied in this project.
@@ -47,6 +71,9 @@ The most technically challenging part of this project is to put the operands and
 
 Example:
 
+Three-layer brackets:
+
+![IMG_20211229_233610_edit_1269905246855174](https://user-images.githubusercontent.com/46556200/147678899-a8db4b86-e0d1-410a-a96f-83b06fc6c70e.jpg)
 
 The priority table (the larger the higher):
 
@@ -62,7 +89,7 @@ The priority table (the larger the higher):
 
 ✔ **Innovative Features**
 
-1. Machine-to-Human Expression Translation
+**⑴ Machine-to-Human Expression Translation**
 
 The question asks for "x" instead of "\*" for the multiplication sign and "1.2E3" for 1.2\*10^3, but I went a step further and did the following conversion (X and Y denote two operands):
 
@@ -76,8 +103,16 @@ The question asks for "x" instead of "\*" for the multiplication sign and "1.2E3
 
 Example:
 
+Originally entered expression:
 
-2. Four LEDs Indicator
+![IMG_20211229_233820_edit_1270033546979113](https://user-images.githubusercontent.com/46556200/147679188-d3f8d3ff-d2bf-4529-8297-a3ea719b9f9b.jpg)
+
+Result machine-style expression:
+
+![IMG_20211229_233845_edit_1270053434595256](https://user-images.githubusercontent.com/46556200/147679269-f743fb8e-7f14-40b1-bab5-558ea2a80de1.jpg)
+
+
+**⑵ Four LEDs Indicator**
 
 I have used four LEDs from left to right: white, orange, blue, and pink to indicate the status of the calculator, so that the user can clearly know the results of each step. In the table below, ⚫ indicates that the light in that position is not on, and the circle with colors (⚪🟡🔵🔴) indicates that it is on. 🔘 indicates any condition.
 
@@ -95,8 +130,14 @@ I have used four LEDs from left to right: white, orange, blue, and pink to indic
 
 Example:
 
+"LOCK" state with four LEDs all on:
+
+![IMG_20211229_234440](https://user-images.githubusercontent.com/46556200/147679630-8c7638d2-ef20-4e1a-9630-69ccaad89957.jpg)
+
 
 # Live Demo
+
+A Video and some photos are waiting to upload...
 
 # Contribution
 The project's LCD driver function and EEPROM initialization, reading and saving methods are referenced from https://github.com/el15cr/ELEC3662-Calculator/blob/master.
