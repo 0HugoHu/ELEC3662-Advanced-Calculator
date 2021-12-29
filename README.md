@@ -34,6 +34,7 @@ Based on Tiva C Series TM4C123G LaunchPad, HITACHI HD44780U 16 * 2 LCD Screen, a
 |`Correct Result`|✅ Yes|Show integer and floating values in correct form, e.g. "2.5\*2=5", "5/2=2.5". Removed unnecessary zeros, e.g. normally "2.6/2=1.3000", here I show the result as "2.6/2=1.3" |
 |`40 Characters Expression`|✅ Yes 💡|Up to 40 characters length expression can be calculated|
 |`Adjust Screen Contrast`|⭕ No 💡|Couln't achieve this function due to the lack of a sliding resistor. PWM modulation is an alternative way, but I leave it here|
+|`Dangerous Calculation Avoided`|✅ Yes 💡|When calculate "1/0" or "log2(-41)", result shows "0" instead of the program crashing.|
 
 # Circuit Scheme
 
@@ -138,6 +139,11 @@ A Video and some photos are waiting to upload...
 |PASSWORD.h|23|Save and read EEPROM|
 |PASSWORD.c|48| |
 |**Total**|**2071**| |
+
+# Known Bugs
+1. When calculate "3++3", the result is 8 --absolutely wrong. Try using "3+(+3)" instead.
+2. Under certain conditions, the result still shows unnecessary zeros.
+3. The result is incomplete when entering a long expression.
 
 # Contribution
 The project's LCD driver function and EEPROM initialization, reading and saving methods are referenced from https://github.com/el15cr/ELEC3662-Calculator/blob/master.
