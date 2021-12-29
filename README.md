@@ -95,7 +95,7 @@ I have used four LEDs from left to right: white, orange, blue, and pink to indic
 
 |LEDs Status          |Explaination       |
 |-------------------------|-------------------------------|
-|⚫⚫⚫⚫|The power if off|
+|⚫⚫⚫⚫|Power off|
 |⚫⚫⚫⚫->⚫⚫⚫🔴->⚪⚫⚫⚫|Power on, initialization succeeds|
 |🔘🔘🔘🔘->⚫⚫⚫🔴->🔘🔘🔘🔘|Error occurs|
 |⚪⚫⚫⚫|No shift|
