@@ -3,6 +3,13 @@ ELEC3662 / XJEL3662 Embedded Systems Mini Project.
 
 Based on Tiva C Series TM4C123G LaunchPad, HITACHI HD44780U 16 * 2 LCD Screen, and a 4 \* 4 matrix Keypad.
 
+# Live Demo
+
+A Video and some photos are waiting to upload...
+
+![Examples](https://user-images.githubusercontent.com/46556200/147748677-6a31a717-aea8-428d-a483-b6486f78a45d.png)
+
+
 # Checklist
 
 💡means extra task.
@@ -134,9 +141,6 @@ Secondly, create a variable to save the last-pressed key, and compare it with th
 
 Since once we intentionally pressed a key, its voltage change lasts for at least 100ms, far greater than 10 * 1000 = 10ms --enough to be detected twice in sequence. It prevents occationally disturbance-caused voltage changes.
 
-# Live Demo
-
-A Video and some photos are waiting to upload...
 
 # Statistics
 
