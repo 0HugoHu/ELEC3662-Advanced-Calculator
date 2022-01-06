@@ -50,6 +50,32 @@ A Video and some photos are waiting to upload...
 
 \*4-bit mode is applied in this project.
 
+# Controller
+
+Button 0-9 act as their original numbers. The button A acts as the SHIFT funtion.
+
+For Calculation Mode:
+
+|KEY|NON A|SHIFT A|DOUBLE-SHIFT A|NOTES|
+|-------------------------|-------------------------------|-----------------------------|-------|-------|
+|A| | | |[1]|
+|B|+|x|^|[2]|
+|C|-|/|log|[3]|
+|D|=|ANS|LOCK|[4] [5]|
+|*|.|π|(| |
+|#|DEL|CLR|)|[6] [7]|
+
+For Lock Mode:
+|KEY|NON A|SHIFT A|DOUBLE-SHIFT A|NOTES|
+|-------------------------|-------------------------------|-----------------------------|-------|-------|
+|A| | | |[8]|
+|B|EDIT| | |[9]|
+|C| | | | |
+|D|CFM| | |[10]|
+|*| | | | |
+|#|DEL| | |[11]|
+
+
 # Highligts
 ✔ **Technically Impressive Features**
 
